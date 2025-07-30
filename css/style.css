@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #BEA574;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.logo {
+    width: 100px;
+    display: block;
+}
+
+nav {
+    width: 300px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.key_visual {
+    height: 100vh;
+    margin-bottom: 24px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide{
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.swiper-slide-active{
+    opacity: 1;
+}
+
+.swiper-slide img{
+    width: 80%;
+    height: 100%;
+    object-fit:cover;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after{
+    display:none;
+}
+
+.swiper-pagination-bullet {
+    background: #BEA574;
+    height:16px;
+    width: 16px;
+}
+
+.title_word {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.title_word span {
+    font-size: 60px;
+    font-weight: bold;
+    color: red;
+}
+
+.schedule {
+    text-align: center;
+    margin: 0 10px;
+    padding: 10px 20px;
+    /* cursor: pointer;
+    transition: background-color 0.3s ease; */
+}
+
+.schedule_title {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.schedule_list {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(177, 174, 174);
+    width: 100%;
+    max-width: 1000px;
+    margin:0 auto;
+}
+
+.schedule-date {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(177, 174, 174);
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 10px;
+}
+
+.schedule_description{
+    width: 1000px;
+    margin: 0 auto;
+    overflow-wrap: break-word;
+    box-shadow : inset 0 0 4px gray;
+    padding: 20px;
+}
+
+.schedule-date:hover {
+    background-color: #BEA574;
+    color:white
+}
+
+.schedule-date.selected {
+    background-color:#BEA574;
+    color:white;
+}
+
+.schedule_description p {
+    display: none;
+}
+
+.schedule_description p:first-child {
+    display: block;
+}
+
+.map {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.map_titile {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact-form{
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+.contact-form p {
+    white-space: nowrap;
+}
+
+.section_title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.form-group {
+    max-width: 100%;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group .label-wrapper{
+   width: 100%;
+    max-width: 400px;
+    display: flex;
+
+}
+
+.form-group input,
+.form-group select{
+    width: 100%;
+    max-width: 400px;
+    padding:0.5rem;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.submit-btn{
+    width: 100%;
+    max-width: 400px;
+    padding: 0.5rem;
+    font-size: 16px;
+    background-color: #BEA574;
+    color: white;
+    transition:background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.submit-btn:hover:not(.disabled){
+    background-color: #BEA574;
+}
+
+.submit-btn.disabled{
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.form-group .required {
+    font-size: 8px;
+    color:red;
+    margin-top: 0.6rem
+}
+
+.form-group .optional {
+    font-size: 8px;
+    color:grey;
+    margin-top: 0.6rem
+}
+
+footer {
+    background-color: #BEA574;
+}
+
+.footer_logo{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
