@@ -13,6 +13,9 @@ const swiper = new Swiper('.swiper', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
+    slidesPerView:1.2,
+    centeredSlides:true,
+    spaceBetween:10,
 });
 
 // スケジュール切り替え
@@ -77,4 +80,10 @@ scheduleItems.forEach((item, index) => {
         scheduleDescriptions.forEach(desc => desc.style.display = 'none');
         scheduleDescriptions[index].style.display = 'block';
     });
+});
+
+// ハンバーガーメニューのトグル
+document.getElementById('menu-icon').addEventListener('click', function() {
+    this.classList.toggle('active'); // アイコンのアニメーション
+    document.getElementById('menu').classList.toggle('active'); // メニューの表示/非表示
 });
