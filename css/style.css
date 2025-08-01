@@ -51,12 +51,12 @@ nav ul {
 .menu-icon span{
     display: block;
     height: 3px;
-    background-color: #333;
+    background-color: white;
     transition: all 0.3s ease;
 }
 
 .menu-icon.active span:nth-child(1){
-    transform: translateY(8px)rotate(45deg);
+    transform: translateY(8px)rotate(40deg);
 }
 
 .menu-icon.active span:nth-child(2){
@@ -64,7 +64,7 @@ nav ul {
 }
 
 .menu-icon.active span:nth-child(3){
-    transform: translateY(-8px)rotate(-45deg);
+    transform: translateY(-8px)rotate(-40deg);
 }
 
 .menu{
@@ -360,7 +360,7 @@ footer {
 
     .menu li {
         width: 100%;
-        border-bottom:1px solid white;a
+        border-bottom:1px solid white;
         margin:0;
     }
 
