@@ -84,7 +84,9 @@ nav ul {
 
 .key_visual {
     height: 100vh;
+    position: relative;
     margin-bottom: 24px;
+    overflow: hidden;
 }
 
 .swiper {
@@ -122,7 +124,10 @@ nav ul {
     text-align: center;
     font-size: 24px;
     font-weight: bold;
-    padding: 0 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 600px;
 }
 
 .title_word span {
@@ -133,11 +138,22 @@ nav ul {
 
 .schedule {
     text-align: center;
-    margin: 0 auto;
+    margin: 20px auto 0;
     padding: 10px 20px;
     max-width: 100%;
     /* cursor: pointer;
     transition: background-color 0.3s ease; */
+}
+
+main {
+    position: relative;
+    overflow: visible;
+    text-align: center;
+}
+
+h2{
+    margin: 20px 0;
+    text-align: center;
 }
 
 .schedule_title {
@@ -191,6 +207,68 @@ nav ul {
 
 .schedule_description p:first-child {
     display: block;
+}
+
+.confirm{
+    text-align: center;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.confirm h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.confirm_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap:20px;
+    margin-bottom: 15px;
+}
+
+.confirm_content p{
+    margin:0;
+    padding: 5px 10px;
+    min-width: 120px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.confirm_content p:last-child{
+    width: auto;
+    min-width: 200px;
+    overflow-wrap: break-word;
+}
+
+.confirm_form{
+    text-align: center;
+    margin-top:20px;
+}
+
+.button{
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #BEA574;
+    color:white;
+    border: none;
+    cursor:pointer;
+    border-radius: 5px;
+}
+
+.button.back{
+    background-color: gray;
+}
+
+.button:hover{
+    background-color: #9b845f;
+}
+
+.button.back:hover{
+    background-color: #666666;
 }
 
 .map {
@@ -324,8 +402,36 @@ footer {
         padding: 0;
     }
 
+    .key_visual{
+        height: 80vh;
+    }
+
+    .titiel_word{
+        font-size: 18px;
+        padding:15px;
+    }
+
     .title_word span {
         font-size: 48px;
+    }
+
+    .schedule{
+        margin: 15px auto 0;
+    }
+
+    .confirm_content{
+        flex-direction: column;
+        gap:10px
+    }
+
+    .confirm_content p {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .confirm_content p:last-child{
+        width: 100%;
+        min-width: auto;
     }
 
     .schedule-date {
@@ -392,16 +498,25 @@ footer {
         padding: 15px 15px;
     }
 
+    .key_visual{
+        height: 60vh;
+    }
+
     .logo {
         width: 80px;
     }
 
     .title_word {
-        font-size: 18px;
+        font-size: 16px;
+        padding: 10px;
     }
 
     .title_word span {
         font-size: 36px;
+    }
+
+    .schedule{
+        margin: 10px auto 0;
     }
 
     .swiper-pagination-bullet {
